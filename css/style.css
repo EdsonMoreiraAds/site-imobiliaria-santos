@@ -1,0 +1,192 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header.topo {
+    background-color: #5da9dd;
+    text-align: center;
+    padding: 10px;
+}
+
+header .logo img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f;
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+}
+
+/* Seções */
+section {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.sobre img, .corretores img {
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+
+}
+
+/* Ajuste dos Parágrafos */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Ajuste do Tamanho dos H2 */
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Ajuste do iframe (Mapa) */
+.contato iframe {
+    width: 90%;
+    height: 200px;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #5da9dd;
+    border-radius: 8px;
+}
+
+
+.servicos {
+    background-color: #5da9dd;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.servicos ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.servicos li {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.botao-email {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.botao-email:hover {
+    background-color: #217dbb;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer.rodape {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    min-height: 70px;
+}
+
+
+/* Estilização do botão */
+.botao-email {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.botao-email:hover {
+    background-color: #217dbb;
+}
+
+/* Estilização do dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* A caixa agora tem borda e fundo branco */
+.dropdown-box {
+    border: 2px solid #3498db;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-conteudo {
+    display: none;
+    position: absolute;
+    top: 45px; /* Espaço maior para não ficar escondido */
+    left: 0;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    min-width: 220px;
+    z-index: 1;
+}
+
+.dropdown-conteudo a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdown-conteudo a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Agora o dropdown aparece ao passar o mouse */
+.dropdown:hover .dropdown-conteudo {
+    display: block;
+}
+.dropdown-conteudo {
+    top: 50px; /* ou mais, se estiver muito embaixo */
+}
